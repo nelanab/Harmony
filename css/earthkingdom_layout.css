@@ -402,7 +402,7 @@ h2 {
 }
 
 p {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size:1.5vmax;
     color:#232B32;
     text-indent: 1vmax;
@@ -411,7 +411,7 @@ p {
 }
 
 #copyright, #credits{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1vmax;
     color: white;
     margin:auto;
