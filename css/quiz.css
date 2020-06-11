@@ -1,0 +1,592 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    margin:0;
+    padding:0;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#container {
+    display:grid;
+    height:auto;
+    grid-template-columns:25% 50% 25%;
+    grid-template-rows:7.5vmax 37.5vmax auto 5vmax;
+}
+
+header {
+    display:flex;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:2;
+    background-color:#232b32;
+}
+
+header #icon{
+    display: none;
+}
+
+#header_nav {
+    height: 7.5vmax;
+    width: 45vmax;
+    display:grid;
+    text-align:center;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows:8fr 1fr;
+    color:#FFF;
+    font-family:Blackside;
+    font-size:1.5vmax;
+    white-space:nowrap;
+    padding-left:2vmax;
+}
+
+#header_nav h5 {
+    padding-left:1.5vmax;
+    padding-right:1.5vmax;
+    padding-top:4.5vmax;
+}
+
+#water_tribes_nav {
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+    transition:color .3s;
+}
+
+#water_tribes_nav:hover {
+    color:#5ACFC9;
+}
+
+#water_tribes_bar {
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:#5ACFC9;
+}
+
+#fire_nation_nav {
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+    transition:color .3s;
+}
+
+#fire_nation_nav:hover {
+    color:#F3533A;
+}
+
+#fire_nation_bar {
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:#F3533A;
+}
+
+#earth_kingdom_nav {
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:2;
+    transition:color .3s;
+}
+
+#earth_kingdom_nav:hover {
+    color:#BAD879;
+}
+
+#earth_kingdom_bar {
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:#BAD879;
+}
+
+#air_temples_nav {
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    transition:color .3s;
+}
+
+#air_temples_nav:hover {
+    color:#FA9F42;
+}
+
+#air_temples_bar {
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:#FA9F42;
+}
+
+#republic_city_nav {
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:2;
+    transition:color .3s;
+}
+
+#republic_city_nav:hover {
+    color:#5ACFC9;
+}
+
+#republic_city_bar {
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:#FFF;
+}
+
+#banner {
+    text-align:center;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-image:url(../images/gradient_sky.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+#hamburger_nav{
+    overflow: hidden;
+    width: 100%;
+    height: 36.5vmax;
+    display: none;
+    text-align: center;
+    background-color: #232B32;
+}
+
+hr{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    border: .5px solid #F3EDE6;
+}
+
+#hamburger_nav h5{
+    font-size: 3vmax;
+    font-family: Blackside;
+    padding-top: 1.5vmax;
+    padding-bottom: 1.5vmax;
+    background-color: #232B32;
+}
+
+#water_ham_nav h5{
+    color: #5ACFC9;
+}
+
+#fire_ham_nav h5{
+    color: #F3533A;
+}
+
+#earth_ham_nav h5{
+    color: #BAD879;
+}
+
+#air_ham_nav h5{
+    color: #FA9F42;
+}
+
+#republic_ham_nav h5{
+    color: white;
+}
+
+#quiz_ham_nav h5{
+    color: #F3EDE6
+}
+
+#quiz_link{
+    clear: both;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#quiz_link_bar{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #F3EDE6;
+}
+
+#quiz_link:hover{
+    color: #f3ede6;
+}
+
+#button_container{
+    text-align: center;
+}
+
+.question{
+    font-family: Blackside;
+    font-size: 3vmax;
+    color: white;
+    background-color: #232B32;
+    padding-bottom: .5vmax;
+    padding-top: .75vmax;
+    padding-left: 2vmax;
+    margin-bottom: 1vmax;
+}
+
+#question_box{
+    padding-top: 2vmax;
+}
+
+button{
+    width: 46%;
+    border-radius: 3px;
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: #232B32;
+    letter-spacing: .1vmax;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: #F3EDE6;
+    box-sizing: border-box;
+    font-family: Blackside;
+    font-size: 2vmax;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: rgb(226, 212, 202);
+    border-image: initial;
+    transition:color .3s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes flow{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+button:hover{
+    background: linear-gradient(to right, #F3533A, #F3533A, #FA9F42, #BAD879, #5ACFC9, #F3533A, #FA9F42); 
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color .2s ease-in-out;
+    animation: flow 3s ease-in-out infinite;
+    background-size: 200%;
+}
+
+.radio{
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-left: 2vw;
+    font-size: 1.5vmax;
+    margin-right: 1vmax;
+}
+
+.quiz{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 1vmax;
+    background-color: #F3EDE6;
+}
+
+.option{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vmax;
+    color:#232B32;
+    padding: 1vmax 1vmax;
+}
+
+.fire_option, .water_option, .earth_option, .air_option{
+    transition: color .2s ease-out;
+}
+.fire_option:hover{
+    color: #F3533A;
+}
+
+.water_option:hover{
+    color: #5ACFC9;
+}
+
+.earth_option:hover{
+    color: #BAD879;
+}
+
+.air_option:hover{
+    color: #FA9F42;
+}
+
+input{
+    margin-top: 1vmax;
+}
+
+.controls{
+    text-align: center;
+    margin: auto;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+}
+
+.results{
+    text-align: center;
+}
+
+.restart{
+    margin-bottom: 1vmax;
+}
+
+.results h3{
+    font-size: 4vmax;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+    margin-top: 0;
+}
+
+.results p{
+    font-size: 2vmax;
+}
+
+#fire_nation_result p{
+    color: #F3533A;
+}
+
+#water_tribes_result p{
+    color: #5ACFC9;
+}
+
+#earth_kingdom_result p{
+    color: #BAD879;
+}
+
+#air_temples_result p{
+    color: #FA9F42;
+}
+
+#avatar{
+    background: linear-gradient(to right, #F3533A, #F3533A, #FA9F42, #BAD879, #5ACFC9, #F3533A, #FA9F42); 
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color .2s ease-in-out;
+    animation: flow 3s ease-in-out infinite;
+    background-size: 200%;
+}
+
+h1, h2, h3, h4, h5{
+    letter-spacing: .1vmax;
+}
+
+h1,h2,h3 {
+    color:#FFF;
+    font-family:Blackside;
+}
+
+h3 {
+    font-size:2vmax;
+    padding-bottom:.5vmax;
+    padding-top:.75vmax;
+    padding-left: 2vmax;
+    background-color: #232B32;
+    padding-right: 2vmax;
+}
+
+h4 {
+    color:#232b32;
+    font-size:2vmax;
+    margin-top:2.75vmax;
+    font-family:Blackside;
+}
+
+h5 {
+    font-size:1.5vmax;
+}
+
+header h1 {
+    padding-left:7vmax;
+}
+
+#banner h2 {
+    font-size: 4vmax;
+    padding-top:18vmax;
+}
+
+h1 {
+    font-size:5vmax;
+    letter-spacing:2vmax;
+    padding-top:1.5vmax;
+}
+
+h3 {
+    font-size:2.5vmax;
+    margin-top: 2vmax;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1.5vmax;
+    color:#232B32;
+    background-color:#F3EDE6;
+    padding:1vmax 1vmax;
+    margin-bottom: 2vmax;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: 1vmax;
+    background-color: #232b32;
+    display: flex;
+    justify-content: center;
+}
+
+#copyright, #credits{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vmax;
+    color: white;
+    margin:auto;
+}
+
+#copyright{
+    justify-content: left;
+    margin-right: 1vmax;
+}
+
+#credits{
+    justify-content: right;
+    margin-left: 1vmax;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+    }
+    
+    .controls{
+        margin-top: 5vmax;
+    }
+
+    .quiz{
+        margin: auto;
+        margin-top: 1vmax;
+        width: 98%;
+        height: 67vmax;
+    }
+
+    .option{
+        font-size: 4vmax;
+    }
+
+    #banner{
+        height: 20vmax;
+    }
+
+    #banner h2{
+        padding-top: 9vmax
+    }
+
+    header{
+        width: 100%;
+    }
+    
+    header h1{
+        margin: auto;
+        padding-bottom: .5vmax;
+    }
+
+    header #icon{
+        display: inline-block;
+        margin-top: 2vmax;
+        margin-right: 3vmax;
+        font-size: 3vmax;
+        color: white;
+    }
+
+    #header_nav{
+        display: none;
+    }
+    #banner{
+        width: 100%;
+    }
+
+    button{
+        width: 96%;
+        height: 15vmax;
+        margin-top: 3vmax;
+        font-size: 6vmax;
+    }
+
+    footer{
+        width: 100%;
+        height: 5vmax;
+        order: 4;
+    }
+
+    p{
+        font-size: 2vmax;
+        padding-left: 2vmax;
+        padding-right: 2vmax;
+        padding-bottom: 2vmax;
+    }
+
+    h4{
+        font-size: 4vmax;
+        margin-top: 5vmax;
+    }
+
+}
+
+@media screen and (max-width: 414px){
+    body{
+        width: 100%;
+    }
+
+    footer{
+        width: 100vw;
+    }
+
+}

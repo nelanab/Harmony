@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>What Nation are You From?</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Avatar the Last Airbender Quiz">
+        <meta name="keywords" content="Avatar, Quiz, Nations">
+        <meta name="author" content="Ana Nelson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/quiz.css" rel="stylesheet">
+        <!--Website Icon-->
+        <link rel="icon" href="images/favicon.png">
+        <link href="css/fontsheet.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--CDN JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </head>
+
+    <body id="container">
+        <header>
+            <h1><a href="homepage.html">Harmony</a></h1>
+
+            <!--Hamburger Navigation Icon-->
+            <a href="javascript:void(0);" id="icon" onclick="hamburger_nav()"></a>
+                    <i class="fa fa-bars"></i>
+
+            <!--Header Navigation-->
+            <nav id="header_nav">
+                <a href="watertribes.html"><h5 id="water_tribes_nav">Water Tribes</h5></a>
+                <div id="water_tribes_bar"></div>
+
+                <a href="firenation.html"><h5 id= "fire_nation_nav">Fire Nation</h5></a>
+                <div id="fire_nation_bar"></div>
+
+                <a href="earthkingdom.html"><h5 id="earth_kingdom_nav">Earth Kingdom</h5></a>
+                <div id="earth_kingdom_bar"></div>
+
+                <a href="airtemples.html"><h5 id="air_temples_nav">Air Temples</h5></a>
+                <div id="air_temples_bar"></div>
+
+                <a href="republiccity.html"><h5 id="republic_city_nav">Republic City</h5></a>
+                <div id="republic_city_bar"></div>
+
+                <a href="quiz.html" id="quiz_link"><h5>Quiz</h5></a>
+                <div id="quiz_link_bar"></div>
+
+            </nav>
+
+        </header>
+        
+        <!--Hamburger Navigation Code (will render above banner when icon is clicked)-->
+        <div id="hamburger_nav">
+            <hr>
+            <a href="watertribes.html" id="water_ham_nav"><h5>Water Tribes</h5></a>
+            <hr>
+            <a href="firenation.html" id="fire_ham_nav"><h5>Fire Nation</h5></a>
+            <hr>
+            <a href="earthkingdom.html" id="earth_ham_nav"><h5>Earth Kingdom</h5></a>
+            <hr>
+            <a href="airtemples.html" id="air_ham_nav"><h5>Air Temples</h5></a>
+            <hr>
+            <a href="republiccity.html" id="republic_ham_nav"><h5>Republic City</h5></a>
+            <hr>
+            <a href="quiz.html" id="quiz_ham_nav"><h5>Quiz</h5></a>
+        </div>
+    
+        <!--Image Banner-->
+        <div id="banner">
+            <h2>What Nation are You From?</h2>
+        </div>
+
+        <!--Quiz Container-->
+        <div class="quiz">
+
+            <div class="question_box">
+
+                <!--Question gets populated by array in JavaScript-->
+                <div id="question" class="question"></div>
+
+                <!--Answer options get populated by array in JavaScript-->
+                <label class="option">
+                    <input type="radio" name="option" value="1"/>
+                    <span class="fire_option"></span>
+                </label><br>
+
+                <label class="option">
+                    <input type="radio" name="option" value="2"/>
+                    <span class="water_option"></span>
+                </label><br>
+
+                <label class="option">
+                    <input type="radio" name="option" value="3"/>
+                    <span class="earth_option"></span>
+                </label><br>
+
+                <label class="option">
+                    <input type="radio" name="option" value="4"/>
+                    <span class="air_option"></span>
+                </label><br>
+
+                <div class="controls">
+                    <button class="previous">Previous</button>
+                    <button class="next">Next</button>
+                </div>
+
+            </div>
+
+            <!--Results get populated by array in JavaScript-->
+            <div class="results"></div>
+
+        </div>
+
+        <!--Footer with name and copyright information-->
+        <footer>
+                <div id="copyright">Avatar: The Last Airbender&copy; Nickelodeon</div>
+                <div id="credits">Web Design by Ana Nelson</div>
+        </footer>
+
+        <!--Quiz External JavaScript-->
+        <script src="javascript/quiz.js"></script>
+
+        <!--Mobile Navigation JavaScript-->
+        <script>
+        
+            // Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger
+            function hamburger_nav() {
+                var hamburger = document.getElementById("hamburger_nav");
+                var banner = document.getElementById("banner");
+                var icon = document.getElementById("icon");
+
+                if (hamburger.style.display === "block") {
+                    hamburger.style.display = "none";
+                    icon.style.color = "white";
+                } 
+                else {
+                    hamburger.style.display = "block";
+                    icon.style.color = "#F3EDE6";
+                }
+            }
+        </script>
+
+    </body>
+</html>

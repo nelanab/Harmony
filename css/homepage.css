@@ -1,0 +1,191 @@
+/* 
+        I am going to implement JavaScript in a few ways for my final
+    website. The first thing I'm going to do is add a hamburger navigation
+    on the header of each page for the mobile view of all pages. This will
+    allow for easier navigation while on a smaller screen. The hamburger icon will
+    be clicked and a small drop down menu will appear below the header. This will have
+    links to each separate page of the site.
+
+        The second thing I will add to my site is a whole separate page dedicated
+    to a quiz. The quiz will determine what Avatar Nation you are from. I am thinking
+    it will have around twenty questions. Each answer will add to a count for it's respective nation, 
+    and whichever nation has the highest count will be the result. There will also be a secret result. It will have animation, and when the final
+    submit button is clicked, it will load a specific page. 
+
+        For things I will improve, I want to improve the responsiveness on a few of the elements that have a transition.
+    Things like the zoom on images aren't as responsive as I would like them to be, so I will definetly be improvin those.
+    I will also make my header navigation a little more responsive using JavaScript, and I would like to try and add loading animation 
+    for each page. I also want to add a little more to each pages descriptions. I also need to make the mobile transition work a little more
+    smoothly. And for the new quiz page, I will need to add a link to it in the header of the individual pages. 
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+#container{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 15vh 60vh 25vh;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#header{ 
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #232b32;
+}
+
+#Nationbox{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2; 
+    grid-row-end: 3;
+    display: flex;
+}
+
+#Nationbox img{
+    padding-top: 20vh;
+    width: 18vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.boxes{
+    flex-wrap: wrap;
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+#RepublicBox{
+    box-shadow: inset 0 0 0 100vmax rgba(35, 43, 50, .5);
+    transition: box-shadow .3s;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    background-image: url("../images/architecture-bay-blue-sky-1619569.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #232b32;
+}
+
+#RepublicBox:hover{
+    box-shadow: inset 0 0 0 100vmax rgba(35, 43, 50, 0);
+}
+
+#WaterTribes{
+    box-shadow: inset 0 0 0 100vmax rgba(90, 207, 201, .5);
+    transition: box-shadow .3s;
+    background-image: url("../images/antarcticaiceberg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#WaterTribes:hover{
+    box-shadow: inset 0 0 0 100vmax rgba(90, 207, 201, 0);
+}
+
+#FireNation{
+    box-shadow: inset 0 0 0 100vmax rgba(243, 83, 58, .5);
+    transition: box-shadow .3s;
+    background-image: url("../images/volcano.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#FireNation:hover{
+    box-shadow: inset 0 0 0 100vmax rgba(243, 83, 58, 0);
+}
+
+#EarthKingdom{
+    box-shadow: inset 0 0 0 100vmax rgba(186, 216, 181, .5);
+    transition: box-shadow .3s;
+    background-image: url("../images/pinkmountain.jpg");
+    background-size: cover;
+    background-position: right;
+}
+
+#EarthKingdom:hover{
+    box-shadow: inset 0 0 0 100vmax rgba(186, 216, 181, 0);
+}
+
+#AirTemples{
+    transition: box-shadow .3s;
+    box-shadow: inset 0 0 0 100vmax rgba(250, 159, 66, .5);
+    background-image: url("../images/temple.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#AirTemples:hover{
+    box-shadow: inset 0 0 0 100vmax rgba(250, 159, 66, 0);
+}
+
+h1, h2 {
+    color: white;
+    font-family: Blackside;
+}
+
+h1{
+    font-size: 10vh;
+    letter-spacing: 10px;
+    padding-top: 3vh;
+}
+
+h2{
+    font-size: 3vmax;  
+}
+
+#Nationbox h2{
+    padding-bottom: 20vh;
+    padding-top: 2vh;
+}
+
+#RepublicBox h2{
+    padding-top: 12vh;
+}
+
+@media screen and (max-width: 414px){
+    #Nationbox img{
+        padding-top: 20vh;
+        width: 10vmax;
+    }
+
+    #header h1{
+        padding-left: 4.5vw;
+    }
+}

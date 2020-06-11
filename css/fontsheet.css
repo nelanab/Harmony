@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Blackside';
+  src: url('../fonts/Blackside.eot');
+  src: url('../fonts/Blackside.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Blackside.svg#Blackside') format('svg'),
+       url('../fonts/Blackside.ttf') format('truetype'),
+       url('../fonts/blackside.woff') format('woff'),
+       url('../fonts/blackside.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

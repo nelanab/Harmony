@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Air Temples</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Avatar the Last Airbender Nation Air Temples Wiki">
+        <meta name="keywords" content="Avatar, Air Temples, Aang">
+        <meta name="author" content="Ana Nelson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/airtemples_layout.css" rel="stylesheet">
+        <link rel="icon" href="images/favicon.png">
+        <link href="css/fontsheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body id="container">
+
+        <header>
+            <h1><a href="homepage.html">Harmony</a></h1>
+            <a href="javascript:void(0);" id="icon" onclick="hamburger_nav()">
+                <i class="fa fa-bars"></i>
+
+            <nav id="header_nav">
+                <a href="watertribes.html" class="desktop_nav"><h5 id="water_tribes_nav">Water Tribes</h5></a>
+                <div id="water_tribes_bar" class="desktop_nav"></div>
+
+                <a href="firenation.html" class="desktop_nav"><h5 id= "fire_nation_nav">Fire Nation</h5></a>
+                <div id="fire_nation_bar" class="desktop_nav"></div>
+
+                <a href="earthkingdom.html" class="desktop_nav"><h5 id="earth_kingdom_nav">Earth Kingdom</h5></a>
+                <div id="earth_kingdom_bar" class="desktop_nav"></div>
+
+                <a href="airtemples.html" class="desktop_nav"><h5 id="air_temples_nav">Air Temples</h5></a>
+                <div id="air_temples_bar" class="desktop_nav"></div>
+
+                <a href="republiccity.html" class="desktop_nav"><h5 id="republic_city_nav">Republic City</h5></a>
+                <div id="republic_city_bar" class="desktop_nav"></div>
+
+                <a href="quiz.html" id="quiz_link" class="desktop_nav"><h5>Quiz</h5></a>
+                <div id="quiz_link_bar" class="desktop_nav"></div>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <div id="hamburger_nav">
+            <hr>
+            <a href="watertribes.html" id="water_ham_nav"><h5>Water Tribes</h5></a>
+            <hr>
+            <a href="firenation.html" id="fire_ham_nav"><h5>Fire Nation</h5></a>
+            <hr>
+            <a href="earthkingdom.html" id="earth_ham_nav"><h5>Earth Kingdom</h5></a>
+            <hr>
+            <a href="airtemples.html" id="air_ham_nav"><h5>Air Temples</h5></a>
+            <hr>
+            <a href="republiccity.html" id="republic_ham_nav"><h5>Republic City</h5></a>
+            <hr>
+            <a href="quiz.html" id="quiz_ham_nav"><h5>Quiz</h5></a>
+        </div>
+
+        <div id="banner">
+            <img src="images/Logos/air2.png" alt="Air Nomads Logo">
+            <h2>Air Temples</h2>
+        </div>
+
+        
+        
+        <section id="sidebar_left">
+
+            <h3 id="figures">Key Figures</h3>
+
+            <div id="character_box">
+
+                <img src="images/characters/Aang.svg" alt="Aang Icon"></a>
+                <img src="images/characters/Yangchen.svg" alt="Yangchen Icon">
+                <img src="images/characters/Gyatso.svg" alt="Gyatso Icon">
+                <img src="images/characters/Appa.svg" alt="Appa Icon">
+
+                <h4 id="char1">Avatar Aang</h4>
+
+                <h4 id="char2">Avatar Yangchen</h4>
+
+                <h4 id="char3">Gyatso</h4>
+
+                <h4 id="char4">Appa</h4>
+
+            </div>
+        </section>
+
+        <section id="middlebox">
+
+            <h3 id="about">About the Air Temples</h3>
+
+            <p>
+                The Air Temples were built in lived in by people known as the Air Nomads. There were four air temples, each located in the far corners 
+                of the world.
+            </p>
+
+            <p>  The Air Nomads were first gifted the ability to energybend by the Lion Turtles so they could protect themselves while they roamed 
+                the Spirit Wilds and gathered food and resources. However, despite their Water, Earth, and Firebending counterparts, the original Air Nomads 
+                coexisted peacefully with the spirits they shared the world with, and fostered a peaceful relationship between them. After the Lion Turtles rescinded 
+                their roles as humanities protectors, the Air Nomads split apart to form villages and build the Air Temples.
+            </p> 
+            <p>
+                However, twelve years after Avatar Roku passed, Fire Lord Sozin used Sozin's Comet to eliminate all Air Nomads. They were thought to be extinct until 
+                Avatar Aang emerged from the ice 100 years later.
+            </p>
+
+        </section>
+        
+        <section id="sidebar_right">
+
+            <h3 id="gallery">Gallery</h3>
+
+            <div class="gallery_image">
+                <img src="images/clouds.jpg" id="clouds" alt="mountain clouds image">
+            </div>
+
+            <div class="gallery_image">
+                <img src="images/temple_view.jpg" id="mountain" alt="view of mountain temple image">
+            </div>
+
+        </section>
+
+        <footer>
+            <div id="copyright">Avatar: The Last Airbender&copy; Nickelodeon</div>
+            <div id="credits">Web Design by Ana Nelson</div>
+        </footer>
+
+        <script>
+            // Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu
+            function hamburger_nav() {
+                var hamburger = document.getElementById("hamburger_nav");
+                var banner = document.getElementById("banner");
+                var icon = document.getElementById("icon");
+
+                if (hamburger.style.display === "block") {
+                    hamburger.style.display = "none";
+                    icon.style.color = "white";
+                } 
+                else {
+                    hamburger.style.display = "block";
+                    icon.style.color = "#FA9F42";
+                }
+            }
+        </script>
+        
+    </body>
+
+</html>
