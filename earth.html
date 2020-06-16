@@ -1,16 +1,17 @@
 <!DOCTYPE>
 <html lang="en">
     <head>
-        <title>Earth Kingdom</title>
+        <title>Harmony - The Earth Kingdom</title>
         <meta charset="UTF-8">
         <meta name="description" content="Avatar the Last Airbender Nation Earth Kingdom Wiki">
         <meta name="keywords" content="Avatar, Earth Kingdom, Toph, Suki, Avatar Kyoshi, King Boomie">
         <meta name="author" content="Ana Nelson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/earth.css" rel="stylesheet">
+        <link href="css/layout.css" rel="stylesheet">
         <link href="css/fontsheet.css" rel="stylesheet">
         <link rel="icon" href="img/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="javascript/jQuery.js"></script>
 
         <style>
             #landing{
@@ -22,31 +23,32 @@
             }
 
             #info h2{
-                background-color: #BAD879;
+                background-image: linear-gradient(#BAD879, #95e995);
             }
 
             #figures{
-                background-color: #BAD879;
+                background-image: linear-gradient(#BAD879, #95e995);
             }
 
             footer{
-                background-color: #BAD879;
+                background-image: linear-gradient(#BAD879, #95e995);
             }
+
         </style>
     </head>
 
     <body>
         
-        <div id="landing">
+        <div id="landing" data-depth="0.2">
             <header>
 
-                <h1>Harmony</h1>
+                <a href="index.html"><h1>Harmony</h1></a>
 
                 <nav>
-                    <h2 class="nav_title" id="water_nav">Water Tribes</h2>
-                    <h2 class="nav_title" id="fire_nav">Fire Nation</h2>
-                    <h2 class="nav_title" id="earth_nav">Earth Kingdom</h2>
-                    <h2 class="nav_title" id="air_nav">Air Temples</h2>
+                    <a href="water.html"><h2 class="nav_title" id="water_nav">Water Tribes</h2></a>
+                    <a href="fire.html"><h2 class="nav_title" id="fire_nav">Fire Nation</h2></a>
+                    <a href="earth.html"><h2 class="nav_title" id="earth_nav">Earth Kingdom</h2></a>
+                    <a href="air.html"><h2 class="nav_title" id="air_nav">Air Temples</h2></a>
                 </nav>
                 
             </header>
@@ -78,15 +80,29 @@
         </section>
 
         <section id="figures">
-            <h2>Key Figures</h2>
-            <img src="img/characters/Toph.svg" alt="Toph Beifong">
-            <img src="img/characters/Kyoshi.svg" alt="Avatar Kyoshi">
-            <img src="img/characters/Bumi.svg" alt="King Bumi">
-            <img src="img/characters/Suki.svg" alt="Suki">
+            <div id="grid_container">
+
+                <img src="img/characters/Toph.svg" alt="Toph Beifong" id="img_1">
+                <img src="img/characters/Kyoshi.svg" alt="Avatar Kyoshi" id="img_2">
+                <img src="img/characters/Bumi.svg" alt="King Bumi" id="img_3">
+                <img src="img/characters/Suki.svg" alt="Suki" id="img_4">
+
+                <h3 id="label_1" class="label">Toph Beifong</h3>
+                <h3 id="label_2" class="label">Avatar Kyoshi</h3>
+                <h3 id="label_3" class="label">King Bumi</h3>
+                <h3 id="label_4" class="label">Suki</h3>
+
+            </div>
         </section>
 
-        <section>
+        <section id="gallery">
             <h2>Gallery</h2>
+            <div id="gallery_grid">
+                <div class="gallery_img" style="background-image: url('img/terrace_farm.jpg'); background-size: cover;">
+                </div>
+                <div class="gallery_img" style="background-image: url('img/great_wall.jpg'); background-size: cover; "></div>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -98,4 +114,11 @@
         </footer>
 
     </body>
+
+    <script src="javascript/parallax.js"></script>
+    <script>
+        var scene = document.getElementById('landing');
+        var parallaxInstance = new Parallax(landing);
+    </script>
+
 </html>
