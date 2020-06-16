@@ -39,7 +39,7 @@
 
     <body>
         
-        <div id="landing" data-depth="0.2">
+        <div id="landing">
             <header>
 
                 <a href="index.html"><h1>Harmony</h1></a>
@@ -55,9 +55,10 @@
 
             <div id="overlay"></div>
 
-            <div id="logo">
-                <img src="img/logos/earth2.png" alt="Earth Kingdom Symbol">
-                <h2>Earth Kingdom</h2>
+            <div id="scene">
+                <div id="logo" data-depth="0.4">
+                    <img src="img/logos/earth2.png" alt="Earth Kingdom Symbol">
+                </div>
             </div>
             
             <div id="bottom_overlay"></div>
@@ -117,8 +118,8 @@
 
     <script src="javascript/parallax.js"></script>
     <script>
-        var scene = document.getElementById('landing');
-        var parallaxInstance = new Parallax(landing);
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
     </script>
 
 </html>

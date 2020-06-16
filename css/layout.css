@@ -82,21 +82,31 @@ nav{
     align-items: center;
 }
 
+#scene{
+    margin: auto;
+    width: 14vw;
+    height: 10vh;
+    padding-bottom: 12vh;
+}
+
 #logo{
     width: 12vw;
     height: 10vh;
-    align-self: center;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    z-index: 4;
+    z-index: 3;
     padding-bottom: 12vh;
 }
 
 #logo:hover{
     transform: scale(1.2);
+}
+
+#logo h2{
+    margin-left: 2%;
 }
 
 #logo img{

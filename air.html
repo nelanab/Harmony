@@ -58,9 +58,10 @@
 
             <div id="overlay"></div>
 
-            <div id="logo">
-                <img src="img/logos/air2.png" alt="Air Nomads Symbol">
-                <h2>Air Nomads</h2>
+            <div id="scene">
+                <div id="logo" data-depth="0.4">
+                    <img src="img/logos/air2.png" alt="Air Nomads Symbol">
+                </div>
             </div>
             
             <div id="bottom_overlay"></div>
@@ -118,4 +119,11 @@
         </footer>
 
     </body>
+
+    <script src="javascript/parallax.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+
 </html>
