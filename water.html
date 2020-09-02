@@ -1,0 +1,133 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <title>Harmony - The Water Tribes</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Avatar the Last Airbender Nation Fire Nation Wiki">
+        <meta name="keywords" content="Avatar, Fire Nation, Zuko, Azula, Firelord Ozai, ">
+        <meta name="author" content="Ana Nelson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/layout.css" rel="stylesheet">
+        <link href="css/fontsheet.css" rel="stylesheet">
+        <link rel="icon" href="img/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="javascript/jQuery.js"></script>
+
+        <style>
+            #landing{
+                background-image: url("img/aurora.jpg");
+            }
+
+            #bottom_overlay{
+                background-image: linear-gradient(rgba(186, 216, 121, 0) 80%, #5ACFC9);
+            }
+
+            #info h2{
+                background-image: linear-gradient(#5ACFC9, #51a4c5);
+            }
+
+            #figures{
+                background-image: linear-gradient(#5ACFC9, #51a4c5);
+            }
+
+            footer{
+                background-image: linear-gradient(#5ACFC9, #51a4c5);
+            }
+
+            ::-webkit-scrollbar-thumb{
+                background-image: linear-gradient(#5ACFC9, #51a4c5);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="landing">
+            <header>
+
+                <a href="index.html"><h1>Harmony</h1></a>
+
+                <nav>
+                    <a href="water.html"><h2 class="nav_title" id="water_nav">Water Tribes</h2></a>
+                    <a href="fire.html"><h2 class="nav_title" id="fire_nav">Fire Nation</h2></a>
+                    <a href="earth.html"><h2 class="nav_title" id="earth_nav">Earth Kingdom</h2></a>
+                    <a href="air.html"><h2 class="nav_title" id="air_nav">Air Temples</h2></a>
+                </nav>
+                
+            </header>
+
+            <div id="overlay"></div>
+
+            <div id="scene">
+                <div id="logo" data-depth="0.4">
+                    <img src="img/logos/water.svg" alt="Earth Kingdom Symbol">
+                </div>
+            </div>
+            
+            <div id="bottom_overlay"></div>
+
+        </div>
+
+        <section id="info">
+            <h2>About the Earth Kingdom</h2>
+            <p>
+                The Water Tribe is the collective term for both the Northern and Southern Water Tribes. The Northern Water 
+                Tribe is located at the north pole, while the Southern Water Tribe is located at the south pole. However, both tribes were 
+                primarily governed by the Northern Water Tribe, up until 171 AG. There was a brief civil war, which resulted in the Southern Water Tribe 
+                becoming completely independent from the Northern Water Tribe. 
+            <br><br>
+                The Water Tribes were formed by humans who gained the ability to energybend from the Lion Turtles. However, after the lion turtles rescinded their roles as 
+                protectors of humanity, the first people of the Water Tribes settled on the North pole, despite having originated in more tropical climates. After a time of peace, a few people 
+                from the Northern Water Tribe became unsastified with life on the North Pole, and went South to form the Southern Water Tribe. This resulted in many cultural differences between the two tribes.
+            <br><br>
+                 Both Water Tribes are weaker than the Fire Nation and the Earth Kingdom, due largely in part to their geographical location. Neither tribe has access to 
+                farmable land, and relies entirely on what resources they can gather from the ocean. Because of this, the people of the Water Tribes are generally peaceful, and strive to 
+                coexist with the nature that they rely upon. During the Hundred Year War, the Southern Water Tribe lost most of its power, and was almost defeated entirely due to the 
+                constant raids by the Fire Nation.
+            </p>
+        </section>
+
+        <section id="figures">
+            <div id="grid_container">
+
+                <img src="img/characters/Katara.svg" alt="Katara" id="img_1">
+                <img src="img/characters/Sokka.svg" alt="Sokka" id="img_2">
+                <img src="img/characters/Korra.svg" alt="Korra" id="img_3">
+                <img src="img/characters/Yue.svg" alt="Yue" id="img_4">
+
+                <h3 id="label_1" class="label">Katara</h3>
+                <h3 id="label_2" class="label">Sokka</h3>
+                <h3 id="label_3" class="label">Korra</h3>
+                <h3 id="label_4" class="label">Yue</h3>
+
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div id="gallery_grid">
+                <div class="gallery_img" style="background-image: url('img/cold-daylight.jpg'); background-size: cover;">
+                </div>
+                <div class="gallery_img" style="background-image: url('img/antarctica_cold.jpg'); background-size: cover; "></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                Avatar: The Last Airbender&copy; Nickelodeon
+                <br>
+                Web Design by Ana Nelson
+            </p>
+        </footer>
+
+    </body>
+
+    <script src="javascript/parallax.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+
+</html>
