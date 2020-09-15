@@ -342,3 +342,34 @@ section p{
 #air_nav:hover{
     color: #ff9260;
 }
+
+@media screen and (max-width: 900px){
+    #figures img{
+        width: 14vmax;
+    }
+
+    #logo{
+        width: 14vw;
+        height: 12vh;
+    }
+
+    #logo img{
+        width: 14vw;
+    }
+
+    h1{
+        font-size: 3.5vmax;
+    }
+
+    h2{
+        font-size: 2.5vmax;
+    }
+
+    h3{
+        font-size: 4vmax;
+    }
+
+    p{
+        font-size: 2vmax;
+    }
+}
