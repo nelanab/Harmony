@@ -384,4 +384,46 @@ section p{
 }
 
 @media screen and (max-width: 450px){
+    
+    #grid_container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 2fr 1fr;
+        width: 60%;
+    }
+
+    #figures img{
+        width: 16vmax;
+    }
+
+    #img_2{
+        grid-column: 2 / 3;
+    }
+
+    #img_3{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #label_3{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #img_4{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #label_4{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    p{
+        font-size: 2.5vmax;
+    }
+
+    #gallery_grid{
+        width: 90%;
+    }
 }
