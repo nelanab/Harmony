@@ -344,6 +344,11 @@ section p{
 }
 
 @media screen and (max-width: 900px){
+
+    header{
+        padding-top: 4vh;
+    }
+
     #figures img{
         width: 14vmax;
     }
@@ -355,6 +360,10 @@ section p{
 
     #logo img{
         width: 14vw;
+    }
+
+    section p{
+        width: 90%;
     }
 
     h1{
@@ -372,4 +381,7 @@ section p{
     p{
         font-size: 2vmax;
     }
+}
+
+@media screen and (max-width: 450px){
 }
