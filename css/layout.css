@@ -343,6 +343,10 @@ section p{
     color: #ff9260;
 }
 
+#mobile_nav{
+    display: none;
+}
+
 @media screen and (max-width: 900px){
 
     header{
@@ -385,6 +389,22 @@ section p{
 
 @media screen and (max-width: 450px){
     
+    #mobile_nav{
+        display: block;
+        width: 10vmax;
+        height: 10vmax;
+        margin-top: 4vh;
+        position: fixed;
+        z-index: 99 !important;
+        border-radius: 0 10px 10px 0;
+    }
+
+    #mobile_nav img{
+        width: 4vmax;
+        margin-left: 3vmax;
+        margin-top: 3vmax;
+    }
+
     #grid_container{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr 1fr 2fr 1fr;
@@ -425,5 +445,14 @@ section p{
 
     #gallery_grid{
         width: 90%;
+    }
+
+    #logo{
+        width: 22vw;
+        height: 18vh;
+    }
+
+    #logo img{
+        width: 20vw;
     }
 }

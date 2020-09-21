@@ -38,11 +38,24 @@
                 background-image: linear-gradient(#F3533A, #dd3c26);
             }
 
+            #mobile_nav{
+                background-image: linear-gradient(#F3533A, #dd3c26);
+            }
+
         </style>
     </head>
 
     <body>
-        
+        <div id="mobile_nav">
+            <img src="img/plus.svg" alt="plus sign" id="nav_logo">
+            <div id="nav_buttons" display="none">
+                <h1>Water Tribes</h1>
+                <h1>Earth Kingdom</h1>
+                <h1>Fire Nation</h1>
+                <h1>Air Temples</h1>
+            </div>
+        </div>
+
         <div id="landing">
             <header>
 
@@ -61,7 +74,7 @@
 
             <div id="scene">
                 <div id="logo" data-depth="0.4">
-                    <img src="img/logos/earth.svg" alt="Earth Kingdom Symbol">
+                    <img src="img/logos/fire.svg" alt="Fire Nation Symbol">
                 </div>
             </div>
             
@@ -70,7 +83,7 @@
         </div>
 
         <section id="info">
-            <h2>About the Earth Kingdom</h2>
+            <h2>About the Fire Nation</h2>
             <p>
                 The Fire Nation is located in the Western Hemisphere of the world, and is composed of several large islands.
                 It's capital is simply called the Fire Nation Capital. The Fire Lord and their family reside in the capital. The capital is guarded by the Great Gates of 
@@ -127,6 +140,21 @@
     <script>
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
+
+        function nav() {
+                var hamburger = document.getElementById("mobile_nav");
+                var banner = document.getElementById("nav_buttons");
+                var icon = document.getElementById("nav_logo");
+
+                if (hamburger.style.width === "10vmax") {
+                    hamburger.style.display = "none";
+                    icon.style.color = "white";
+                } 
+                else {
+                    hamburger.style.display = "block";
+                    icon.style.color = "#F3EDE6";
+                }
+            }
     </script>
 
 </html>
